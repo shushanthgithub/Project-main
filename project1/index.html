@@ -1,0 +1,2160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        * {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width: hidden;
+}
+
+/* this is header section */
+#headersection {
+    width: 100vw;
+    height: 120vh;
+    position: relative;
+}
+
+
+#header-navbar {
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1rem;
+    background-color: rgb(0, 0, 0);
+    z-index: 1;
+    position: fixed;
+}
+#header-navbar > :hover header-nav-names>a{
+    visibility: visible;
+}
+
+#header-nav-icon>a {
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+    display: flex;
+}
+
+#header-nav-names>a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.97);
+    padding: 20px;
+}
+
+#header-nav-icon>a:hover {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.983);
+}
+
+#header-nav-names>a:hover {
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+}
+
+#iconbook {
+    border: 3px solid rgb(255, 255, 255);
+    width: 3vw;
+    height: 5vh;
+    padding: 0px;
+    margin-top: -5px;
+    border-radius: 50%;
+    background-color: rgba(255, 166, 0, 0.966);
+}
+
+#ebook {
+    padding-left: 40px;
+}
+
+#downloadbutton {
+    border: 5px solid rgba(255, 0, 0, 0.99);
+    padding: 10px 30px 10px 30px;
+    border-radius: 30px 30px 30px 30px;
+}
+
+#header-background-image {
+    width: 100vw;
+    height: 80vh;
+    background-image: url(businessman-sitting-by-table-cafe.jpg);
+    background-size: 100% 90%;
+    background-repeat: no-repeat;
+    filter: brightness(0.6);
+    clip-path: polygon(0 0, 120% 0, 0 180%, 0 0);
+}
+
+#header-reviews-images {
+    width: 50vw;
+    height: 20vh;
+    background-color: rgb(255, 165, 0);
+    margin-top: -55px;
+}
+
+#header-small-review-imgs1,
+#header-small-review-imgs2,
+#header-small-review-imgs3,
+#header-small-review-imgs4 {
+    border-radius: 50%;
+    border: 10px solid white;
+    margin-left: 45px;
+    margin-top: 40px;
+}
+
+#header-small-review-imgs2,
+#header-small-review-imgs3,
+#header-small-review-imgs4 {
+    margin-left: -17px;
+}
+
+.header-imgbooks {
+    width: 40vw;
+    margin-left: 45%;
+    margin-top: -550px;
+    position: absolute;
+    top: 850px;
+}
+
+#header-onlinebook {
+    width: 400px;
+    height: 500px;
+}
+
+.header-headings {
+    width: 40vw;
+    position: absolute;
+    top: 200px;
+    margin-left: 100px;
+    font-size: 1.5rem;
+}
+
+#headings-h1tag {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.anchortag {
+    margin: 15px;
+    padding: 20px;
+    margin-left: -10px;
+}
+
+#anchortag1 {
+    background-color: orange;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+#anchortag2:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+/* this is section part  */
+#section {
+    width: 100vw;
+    height: 500vh;
+}
+
+/* this is section in article1 part */
+#section-article1 {
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+}
+
+#article1-tablet {
+    width: 50vw;
+    height: 60vh;
+}
+
+#article1-tablet-content {
+    width: 50vw;
+    height: 60vh;
+    padding-left: 50px;
+    padding-top: 50px;
+    font-size: 1rem;
+}
+
+#tablet-screen-img {
+    width: 50vw;
+    height: 60vh;
+}
+
+#article2 {
+    width: 100vw;
+    height: 100vh;
+
+    text-align: center;
+}
+
+#article2-maindiv {
+    width: 100vw;
+    height: 80vh;
+
+    display: flex;
+}
+
+#article2-contentbox {
+    width: 50vw;
+    height: 80vh;
+}
+
+#article2-contentbox-names {
+    width: 36vw;
+    height: 34vw;
+    margin: 20px;
+    border: 5px solid rgba(255, 0, 0, 0.951);
+    margin-left: 50px;
+    padding-left: -80px;
+    border-radius: 20%;
+    padding-top: 100px;
+
+    .part3-content {
+        width: 900px;
+        height: 700px;
+        margin-left: 100px;
+        margin-top: 10px;
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+
+    .h1tag {
+        width: 600px;
+        height: 300px;
+        margin-left: 100px;
+        padding-top: 15px;
+        background-color: rgba(0, 136, 255, 0.23);
+    }
+
+    .h1-ebook {
+        padding: 45px;
+        font-size: 3rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+#a-span {
+    color: black;
+    font-size: 1rem;
+    padding: 20px;
+    padding-right: 150px;
+    padding-left: 71px;
+    border-radius: 20px;
+    margin-left: -25px;
+    background-color: rgba(95, 158, 160, 0.742);
+}
+
+#a-span0 {
+    color: black;
+
+    font-size: 1rem;
+    padding: 20px;
+    padding-right: 50px;
+    padding-left: 40px;
+    border-radius: 20px;
+    margin-left: -200px;
+    margin-right: -180px;
+    background-color: rgba(95, 158, 160, 0.594);
+}
+
+#a-span1 {
+    color: black;
+
+    font-size: 1rem;
+    padding: 20px;
+    padding-right: 50px;
+    padding-left: 40px;
+    border-radius: 20px;
+    margin-left: -200px;
+    margin-right: -180px;
+    background-color: rgba(95, 158, 160, 0.594);
+}
+
+#a-span2 {
+    color: black;
+
+    font-size: 1rem;
+    padding: 20px;
+    padding-right: 147px;
+    padding-left: 40px;
+    border-radius: 20px;
+    margin-left: -200px;
+    margin-right: -180px;
+    background-color: rgba(95, 158, 160, 0.594);
+}
+
+#a-span3 {
+    color: black;
+
+    font-size: 1rem;
+    padding: 20px;
+    padding-right: 147px;
+    padding-left: 40px;
+    border-radius: 20px;
+    margin-left: -200px;
+    margin-right: -180px;
+    background-color: rgba(95, 158, 160, 0.594);
+}
+
+#a-span2:hover {
+    background-color: rgba(255, 0, 0, 0.934);
+    color: white;
+}
+
+#a-span3:hover {
+    background-color: rgba(255, 0, 0, 0.934);
+    color: white;
+}
+
+#a-span1:hover {
+    background-color: rgba(255, 0, 0, 0.934);
+    color: white;
+}
+
+#a-span,
+#a-span0:hover {
+    background-color: rgba(255, 0, 0, 0.934);
+    color: white;
+}
+
+#article2-content {
+    width: 50vw;
+    height: 80vh;
+}
+
+#article2-h2tag {
+    color: rgba(255, 166, 0, 0.951);
+}
+
+#article2-h1tag {
+    font-size: 1.5rem;
+}
+
+.part3-content {
+    width: 50vw;
+    height: 80vh;
+    margin-left: -10px;
+    margin-top: 1px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.h1tag {
+    width: 230px;
+    height: 200px;
+    margin-left: 40%;
+    padding-top: 15px;
+    background-color: rgba(0, 136, 255, 0.23);
+}
+
+.h1-ebook {
+    padding: 45px;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.part3-content-d1>p {
+    padding: 5px;
+    font-size: 1rem;
+    font-style: oblique;
+    padding-left: -10px;
+}
+
+.wrap {
+    display: flex;
+}
+
+.left {
+    flex: 1;
+    display: flex;
+}
+
+.left::after {
+    border-bottom: 10px dotted;
+    content: "";
+    flex: 1;
+}
+
+.main {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    margin-left: 50px;
+}
+
+.main>.main1 {
+    width: 25%;
+    height: 150px;
+    background-image: url(portrait-mature-smiling-authoress-sitting-desk.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20%;
+}
+
+.main>.main2 {
+    width: 25%;
+    height: 150px;
+    background-image: url(businessman-sitting-by-table-cafe.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20%;
+    margin-left: 20px;
+}
+
+.tabbook {
+    width: 50%;
+    height: 150px;
+    display: flex;
+    margin-left: 20px;
+}
+
+.tabbook>.tabbook1 {
+    width: 40%;
+    height: 150px;
+    background-image: url(tablet-screen-contents.jpg);
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    background-size: contain;
+}
+
+.tabbook>.tabbook2 {
+    width: 40%;
+    height: 350px;
+
+    background-repeat: no-repeat;
+    background-size: 500px;
+
+    margin-left: 10px;
+}
+
+.tabbook2>p {
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.content-d1 {
+    width: 25%;
+    height: 200px;
+    margin-left: 150px;
+    background-image: url(portrait-mature-smiling-authoress-sitting-desk.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10%;
+}
+
+/* this is article3 part */
+#section-article3 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+#section-article3-images {
+    width: 50vw;
+    height: 100vh;
+}
+
+#section-article3-content {
+    width: 50vw;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+#article-img1 {
+    width: 50vh;
+    height: 100vh;
+}
+
+#article-img2 {
+    width: 50vh;
+    height: 50vh;
+    border: 10px solid orange;
+    border-radius: 50%;
+    margin-bottom: 200px;
+    margin-left: 0px;
+}
+
+.part4-content {
+    width: 30vw;
+    margin-left: 100px;
+    font-size: 1rem;
+    margin-top: 100px;
+}
+
+.part4-content>h2 {
+    color: orange;
+}
+
+.part4-content>h1 {
+    font-size: 1.5rem;
+}
+
+.section-article4 {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+
+.section-article4>h2 {
+    color: orange;
+}
+
+.section-article4>h1 {
+    font-size: 1.5rem;
+}
+
+.reviews {
+    width: 100vw;
+    height: 95vh;
+    display: flex;
+    position: relative;
+}
+
+.review1,
+#review2,
+#review3 {
+    width: 33vw;
+    height: 95vh;
+}
+
+#review3 {
+    margin-left: -15px;
+}
+
+.part1-review-span {
+    width: 20vw;
+    margin-top: 200px;
+    position: absolute;
+    top: -390px;
+    margin-left: -260px;
+}
+
+.review1-background-img {
+    width: 25vw;
+    height: 80vh;
+    margin-left: 100px;
+    margin-top: 100px;
+    background-image: url(businessman-sitting-by-table-cafe.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(0.6);
+    border-radius: 10%;
+}
+
+.review-img1 {
+    position: absolute;
+    top: 110px;
+    margin-left: 250px;
+}
+
+.backgroundcolor-review11 {
+    width: 10vw;
+    height: 25vh;
+    margin-top: -210px;
+    margin-left: 220px;
+    position: absolute;
+    top: 310px;
+    background-color: rgba(255, 98, 0, 0.806);
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+
+.reviewr-name {
+    width: 60px;
+    font-size: 1rem;
+    position: absolute;
+    top: 170px;
+    margin-left: 250px;
+    color: white;
+    margin-top: 20px;
+}
+
+.reviewr-content {
+    width: 20vw;
+    height: 10vh;
+    position: absolute;
+    top: 340px;
+    margin-left: 150px;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.reviewr-content>p {
+    font-size: 1.5rem;
+}
+
+.reviewr-numbers {
+    width: 10vw;
+    position: absolute;
+    top: 470px;
+    margin-left: 300px;
+}
+
+.numberrating {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.header-small-review-imgs1 {
+    border-radius: 50%;
+    border: 10px solid white;
+}
+
+
+.review-img2 {
+    position: absolute;
+    top: 110px;
+    margin-left: 250px;
+}
+.part1-review-span2 {
+    width: 20vw;
+    margin-top: 200px;
+    position: absolute;
+    top: -390px;
+    margin-left: -260px;
+}
+
+
+.backgroundcolor-review2 {
+    width: 10vw;
+    height: 25vh;
+    margin-top: -210px;
+    margin-left: 220px;
+    position: absolute;
+    top: 310px;
+    background-color: rgba(255, 98, 0, 0.806);
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+
+.reviewr-name2 {
+    width: 60px;
+    font-size: 1rem;
+    position: absolute;
+    top: 170px;
+    margin-left: 250px;
+    color: white;
+    margin-top: 20px;
+}
+
+.reviewr-content2 {
+    width: 20vw;
+    height: 10vh;
+    position: absolute;
+    top: 340px;
+    margin-left: 150px;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.reviewr-content2>p {
+    font-size: 1.5rem;
+}
+
+.reviewr-numbers2 {
+    width: 10vw;
+    position: absolute;
+    top: 470px;
+    margin-left: 300px;
+}
+
+.numberrating {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.header-small-review-imgs2 {
+    border-radius: 50%;
+    border: 10px solid white;
+}
+
+
+.review-img3 {
+    position: absolute;
+    top: 110px;
+    margin-left: 250px;
+}
+.part1-review-span3 {
+    width: 20vw;
+    margin-top: 200px;
+    position: absolute;
+    top: -390px;
+    margin-left: -260px;
+}
+
+
+.backgroundcolor-review3 {
+    width: 10vw;
+    height: 25vh;
+    margin-top: -210px;
+    margin-left: 220px;
+    position: absolute;
+    top: 310px;
+    background-color: rgba(255, 98, 0, 0.806);
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+
+.reviewr-name3 {
+    width: 60px;
+    font-size: 1rem;
+    position: absolute;
+    top: 170px;
+    margin-left: 250px;
+    color: white;
+    margin-top: 20px;
+}
+
+.reviewr-content3 {
+    width: 20vw;
+    height: 10vh;
+    position: absolute;
+    top: 340px;
+    margin-left: 150px;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.reviewr-content3>p {
+    font-size: 1.5rem;
+}
+
+.reviewr-numbers3 {
+    width: 10vw;
+    position: absolute;
+    top: 470px;
+    margin-left: 300px;
+}
+
+.numberrating {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.header-small-review-imgs3 {
+    border-radius: 50%;
+    border: 10px solid white;
+}
+
+
+#footer {
+    width: 100vw;
+    height: 120vh;
+
+    margin-top: 200px;
+    display: flex;
+    background-color: rgb(255, 165, 0);
+    background-image: linear-gradient(to bottom right, white 25%, orange 25%);
+}
+
+#footer1 {
+    width: 50vw;
+    height: 100vh;
+}
+
+#footer2 {
+    width: 50vw;
+    height: 100vh;
+}
+
+.footer-part6-inputs {
+    width: 27vw;
+    height: 70vh;
+    margin-left: 200px;
+    margin-top: 20%;
+    background-color: white;
+    border-radius: 10%;
+    box-shadow: 10px 10px 10px 10px orangered;
+}
+
+.footer-part6-inputs>h1 {
+    font-size: 2rem;
+    padding: 40px;
+    text-align: center;
+}
+
+#inputname {
+    font-size: 2rem;
+    margin-left: 30px;
+    border-radius: 20px;
+    height: 30px;
+}
+
+input {
+    font-size: 1rem;
+    margin-left: 80px;
+    padding: 20px;
+    border-radius: 30px 30px 30px 30px;
+    border: 2px solid orange;
+}
+
+.user {
+    width: 20px;
+    margin-top: -35px;
+    margin-left: 270px;
+    visibility: hidden;
+}
+
+.inputs:hover .user {
+    visibility: visible;
+}
+
+input:hover {
+    border: 3px solid red;
+}
+
+button {
+    font-size: 1rem;
+
+    padding: 20px;
+    border-radius: 30px 30px 30px 30px;
+    border: 2px solid orange;
+    font-weight: bolder;
+    background-color: rgba(255, 166, 0, 0.552);
+    margin-left: 100px;
+}
+
+button:hover {
+    background-color: orangered;
+    color: white;
+}
+
+.footer-part6-contact {
+    width: 50%;
+    height: 200px;
+
+    margin-top: 30%;
+    height: 600px;
+}
+
+.footer-part6-contact h3 {
+    color: orangered;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+.footer-part6-contact h1 {
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.footer-part6-contact h4 {
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: white;
+    padding-top: 20px;
+}
+
+iframe {
+    visibility: hidden;
+    margin-left: 600px;
+}
+
+a:hover iframe {
+    visibility: visible;
+}
+
+a:hover h4 {
+    color: orangered;
+}
+
+.font-icons {
+    display: flex;
+}
+
+.icons1 {
+    width: 50px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: orangered;
+}
+
+
+/* media queries */
+@media only screen and (max-width: 480px) {
+    body {
+    
+        width: 100vw;
+        height: auto;
+        overflow-x: hidden;
+    }
+
+
+    #section {
+        width: 100vw;
+    }  
+
+    #header-navbar {
+        width: 100vw;
+        height: 20vh;
+        padding: 20px;
+        flex-direction: column;
+        background-color: black;
+    }
+
+    #iconsymbol {
+        background-image: url("./images/menu_40dp_FILL0_wght400_GRAD0_opsz40\ \(1\).png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        width: 15vw;
+        padding: 10px;
+        margin: -50px;
+        margin-top: -70px;
+    }
+    
+
+    #header-nav-icon>a {
+        margin-left: -160px;
+        width: 30vw;
+        padding: 20px;
+    }
+
+    #header-navbar:hover  #header-nav-names>a  {
+        background-color: skyblue;
+        visibility: visible;
+        width: 30vw;
+    }
+    #header-navbar:hover  #header-nav-names>a >#downloadbutton{
+        margin-left: 120px;
+    }
+
+
+    #header-nav-names>a {
+        flex-direction: column;
+        display: flex;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        padding: 12px;
+        visibility: hidden;
+    }
+
+    #downloadbutton {
+        border: 3px solid rgba(255, 0, 0, 0.99);
+        border-radius: 12px 12px 12px 12px;
+        padding: 2px 2px 2px 2px;
+        width: 30vw;
+        margin-left: 210px;
+        margin-top: -210px;
+        visibility: visible;
+    }
+
+    #iconbook {
+        border: 3px solid rgb(255, 255, 255);
+        width: 25vw;
+        height: 5vh;
+        padding: 6px;
+        margin-top: 30px;
+    }
+
+    #ebook {
+        padding-left: 15px;
+        margin-top: 40px;
+    }
+
+    #header-background-image {
+        width: 100vw;
+        height: 120vh;
+    }
+
+    .header-headings {
+        width: 80vw;
+        height: 20vh;
+        margin-top: 80px;
+        margin-left: 40px;
+        font-size: 1rem;
+    }
+
+    #header-small-review-imgs1,
+    #header-small-review-imgs2,
+    #header-small-review-imgs3,
+    #header-small-review-imgs4 {
+        width: 10vw;
+        height: 10vh;
+        margin-left: 45px;
+        margin-top: 40px;
+    }
+
+    #header-small-review-imgs2,
+    #header-small-review-imgs3,
+    #header-small-review-imgs4 {
+        margin-left: -17px;
+    }
+
+    #header-review-span {
+        position: absolute;
+        top: 1100px;
+        width: 80vw;
+        margin-left: -120px;
+        color: red;
+        font-size: 1.3rem;
+    }
+
+    .material-symbols-outlined {
+        color: orange;
+    }
+
+    .header-imgbooks {
+        width: 40vw;
+        margin-left: 45%;
+        margin-top: -300px;
+    }
+
+    #header-onlinebook {
+        width: 200px;
+        height: 65vh;
+    }
+
+    #header-reviews-images {
+        width: 50vw;
+        height: 20vh;
+        margin-top: -115px;
+    }
+
+    #section-article1 {
+        width: 100vw;
+        height: 130vh;
+        display: block;
+        margin-top: 200px;
+    }
+
+    #article1-tablet {
+        width: 100vw;
+        height: 60vh;
+    }
+
+    #tablet-screen-img {
+        width: 80vw;
+        height: 50vh;
+        margin-left: 30px;
+    }
+
+    #article1-tablet-content {
+        width: 100vw;
+        height: 70vh;
+        flex-wrap: wrap;
+        padding-left: 30px;
+        padding-top: 50px;
+        font-size: 1rem;
+    }
+
+    #article2 {
+        width: 100vw;
+        height: 230vh;
+    }
+
+    #article2-maindiv {
+        width: 100vw;
+        height: 200vh;
+        display: block;
+    }
+
+    #article2-contentbox {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    #article2-contentbox-names {
+        width: 90vw;
+        height: 130vw;
+        margin: 20px;
+        border: 5px solid rgba(255, 0, 0, 0.951);
+        margin-left: 15px;
+        padding-left: 20px;
+        border-radius: 20%;
+        padding-top: -90px;
+    }
+
+    .h1tag {
+        width: 600px;
+        height: 300px;
+        margin-left: 100px;
+        padding-top: 15px;
+        background-color: rgba(0, 136, 255, 0.23);
+    }
+
+    .h1-ebook {
+        padding: 45px;
+        font-size: 3rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #a-span {
+        color: black;
+        font-size: 1rem;
+        padding: 20px;
+        padding-right: 150px;
+        padding-left: 71px;
+        border-radius: 20px;
+        margin-left: -25px;
+        background-color: rgba(95, 158, 160, 0.742);
+    }
+
+    #a-span0 {
+        color: black;
+
+        font-size: 1rem;
+        padding: 20px;
+        padding-right: 50px;
+        padding-left: 40px;
+        border-radius: 20px;
+        margin-left: -200px;
+        margin-right: -180px;
+        background-color: rgba(95, 158, 160, 0.594);
+    }
+
+    #a-span1 {
+        color: black;
+
+        font-size: 1rem;
+        padding: 20px;
+        padding-right: 50px;
+        padding-left: 40px;
+        border-radius: 20px;
+        margin-left: -200px;
+        margin-right: -180px;
+        background-color: rgba(95, 158, 160, 0.594);
+    }
+
+    #a-span2 {
+        color: black;
+
+        font-size: 1rem;
+        padding: 20px;
+        padding-right: 147px;
+        padding-left: 40px;
+        border-radius: 20px;
+        margin-left: -200px;
+        margin-right: -180px;
+        background-color: rgba(95, 158, 160, 0.594);
+    }
+
+    #a-span3 {
+        color: black;
+
+        font-size: 1rem;
+        padding: 20px;
+        padding-right: 147px;
+        padding-left: 40px;
+        border-radius: 20px;
+        margin-left: -200px;
+        margin-right: -180px;
+        background-color: rgba(95, 158, 160, 0.594);
+    }
+
+    #a-span2:hover {
+        background-color: rgba(255, 0, 0, 0.934);
+        color: white;
+    }
+
+    #a-span3:hover {
+        background-color: rgba(255, 0, 0, 0.934);
+        color: white;
+    }
+
+    #a-span1:hover {
+        background-color: rgba(255, 0, 0, 0.934);
+        color: white;
+    }
+
+    #a-span,
+    #a-span0:hover {
+        background-color: rgba(255, 0, 0, 0.934);
+        color: white;
+    }
+
+    #article2-content {
+        width: 100vw;
+        height: 100vh;
+
+        padding-left: -200px;
+    }
+
+    #article2-h2tag {
+        color: rgba(255, 166, 0, 0.951);
+    }
+
+    #article2-h1tag {
+        font-size: 1.5rem;
+    }
+
+    .part3-content {
+        width: 100vw;
+        height: 80vh;
+    }
+
+    .h1tag {
+        width: 50vw;
+        height: 40vh;
+        margin-left: 100px;
+        font-size: 1rem;
+        background-color: rgba(0, 136, 255, 0.23);
+    }
+
+    .h1-ebook {
+        padding: 45px;
+        font-size: 1rem;
+        color: orange;
+    }
+
+    .part3-content-d1>p {
+        padding: 10px;
+        padding-left: 40px;
+        padding-right: 40px;
+        flex-wrap: wrap;
+        text-align: justify;
+    }
+
+    .wrap {
+        display: flex;
+    }
+
+    .left {
+        flex: 1;
+        display: flex;
+    }
+
+    .left::after {
+        border-bottom: 10px dotted;
+        content: "";
+        flex: 1;
+    }
+
+    .main {
+        width: 100vw;
+        height: 350px;
+        display: block;
+        margin-left: 50px;
+    }
+
+    .main>.main1 {
+        margin-left: 20px;
+
+        width: 60%;
+        height: 150px;
+    }
+
+    .main>.main2 {
+        margin-top: 20px;
+        width: 60%;
+    }
+
+    .tabbook {
+        width: 100vh;
+        height: 150px;
+        display: black;
+    }
+
+    .tabbook>.tabbook1 {
+        width: 40vw;
+        height: 30vh;
+        margin-left: 15px;
+    }
+
+    .tabbook>.tabbook2 {
+        width: 40vw;
+        height: 30vh;
+    }
+
+    .content-d1 {
+        width: 40vw;
+        height: 20vh;
+        margin-left: 100px;
+        background-image: url(portrait-mature-smiling-authoress-sitting-desk.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    #section-article3 {
+        width: 100vw;
+        height: 100vh;
+        display: block;
+    }
+
+    #section-article3-images {
+        width: 10vw;
+        height: 70vh;
+    }
+
+    #section-article3-content {
+        width: 50vw;
+        height: 100vh;
+        text-align: center;
+        padding: 20px;
+    }
+
+    #article-img1 {
+        width: 40vw;
+        height: 50vh;
+    }
+
+    #article-img2 {
+        width: 30vh;
+        height: 30vh;
+        margin-left: 160px;
+        margin-top: -200px;
+    }
+
+    .part4-content {
+        width: 100vw;
+        height: 50vh;
+        margin-left: -20px;
+        font-size: 1rem;
+        margin-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .part4-content>h2 {
+        color: orange;
+    }
+
+    .part4-content>h1 {
+        font-size: 1.5rem;
+    }
+
+    .section-article4 {
+        width: 100vw;
+        height: 175vh;
+    
+        margin-top: 50px;
+    }
+
+    .reviews {
+        width: 100vw;
+        height: 150vh;
+    
+        display: block;
+
+    }
+
+    .review1 {
+        width: 70vw;
+        height: 70vh;
+        margin-left: 53px;
+        margin-top: 40px;
+    }
+
+    #review2 {
+        width: 70vw;
+        height: 70vh;
+        margin-left: 53px;
+        margin-top: -155px;
+    }
+
+    #review3 {
+        width: 70vw;
+        height: 70vh;
+        margin-left: 53px;
+        margin-top: -175px;
+    }
+
+    .review1-background-img {
+        width: 70vw;
+        height: 350px;
+        margin-left: -1px;
+        margin-top: -15px;
+    }
+
+    .backgroundcolor-review11 {
+        width: 100px;
+
+        height: 17vh;
+        margin-top: -280px;
+        margin-left: 90px;
+        position: absolute;
+        top: 310px;
+        background-color: rgba(255, 98, 0, 0.806);
+        border-bottom-left-radius: 10%;
+        border-bottom-right-radius: 10%;
+    }
+
+    .review-img1 {
+        margin-top: -70px;
+        margin-left: 115px;
+    }
+
+    .header-small-review-imgs1 {
+        width: 45px;
+        height: 45px;
+    }
+
+    .reviewr-name {
+        margin-top: -80px;
+        margin-left: 110px;
+    }
+
+    .reviewr-content {
+        width: 60vw;
+        height: 26vh;
+        margin-top: -90px;
+        margin-left: 10px;
+    }
+
+    .reviewr-content>p {
+        font-size: 1rem;
+    }
+
+    .part1-review-span {
+        width: 50vw;
+        margin-top: 100px;
+        margin-left: -300px;
+    }
+
+    .backgroundcolor-review2 {
+        width: 100px;
+
+        height: 17vh;
+        margin-top: 100px;
+        margin-left: 90px;
+        position: absolute;
+        top: 310px;
+        background-color: rgba(255, 98, 0, 0.806);
+        border-bottom-left-radius: 10%;
+        border-bottom-right-radius: 10%;
+    }
+
+    .review-img2 {
+        position: absolute;
+        top: 430px;
+        margin-left: 120px;
+    }
+
+    .header-small-review-imgs2 {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        border: 10px solid white;
+    }
+
+    .reviewr-name2 {
+        position: absolute;
+        top: 450px;
+        margin-top: 30px;
+        margin-left: 110px;
+        color: white;
+    }
+
+    .reviewr-name2>h1 {
+        font-size: 1rem;
+    }
+
+    .reviewr-content2 {
+        position: absolute;
+        top: 340px;
+        color: white;
+        padding: 10px;
+        font-size: 20px;
+        width: 60vw;
+        height: 26vh;
+        margin-top: 290px;
+        margin-left: 10px;
+    }
+
+    .reviewr-content2>p {
+        font-size: 1rem;
+    }
+
+    .part1-review-span2 {
+        position: absolute;
+        top: 570px;
+        margin-left: -100px;
+    }
+
+    .backgroundcolor-review3 {
+        width: 23vw;
+        height: 17vh;
+        margin-top: -140px;
+        margin-left: 100px;
+        position: absolute;
+        top: 910px;
+        background-color: rgba(255, 98, 0, 0.806);
+        border-bottom-left-radius: 10%;
+        border-bottom-right-radius: 10%;
+    }
+
+    .review-img3 {
+        position: absolute;
+        top: 610px;
+        margin-left: 130px;
+        margin-top: 170px;
+    }
+
+    .header-small-review-imgs3 {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        border: 10px solid white;
+    }
+
+    .reviewr-name3 {
+        position: absolute;
+        top: 450px;
+        margin-top: 380px;
+        margin-left: 110px;
+        color: white;
+    }
+
+    .reviewr-content3 {
+        position: absolute;
+        top: 640px;
+        color: white;
+        padding: 10px;
+        font-size: 20px;
+        width: 60vw;
+        height: 26vh;
+        margin-top: 350px;
+        margin-left: 10px;
+    }
+
+    .reviewr-content3>p {
+        font-size: 1rem;
+    }
+
+    .part1-review-span3 {
+        position: absolute;
+        top: 570px;
+        margin-left: -100px;
+        margin-top: 400px;
+    }
+
+    #footer {
+        width: 100vw;
+        height: 70vh;
+    
+        margin-top: -100px;
+        display: block;
+        background-color: rgb(255, 165, 0);
+        background-image: linear-gradient(to bottom right, white 25%, orange 25%);
+    }
+    
+    #footer1 {
+        width: 100vw;
+        height: 70vh;
+       
+    }
+    
+    #footer2 {
+        width: 100vw;
+        height: 70vh;
+        color: orange;
+        padding-left: 30px;
+    }
+    
+    .footer-part6-inputs {
+        width: 70vw;
+        height: 45vh;
+        margin-left: 80px;
+        margin-top: 10%;
+        background-color: white;
+        border-radius: 10%;
+        box-shadow: 10px 10px 10px 10px orangered;
+    }
+    
+    .footer-part6-inputs>h1 {
+        
+        font-size: 1rem;
+        padding: 5px;
+        text-align: center;
+    }
+    
+    #inputname {
+        font-size: 1rem;
+        margin-left: -10px;
+        border-radius: 20px;
+        height: 10px;
+    }
+    
+    input {
+        font-size: 1rem;
+        margin-left: 10px;
+        padding-left: 5px;
+        padding: 5px;
+        border-radius: 30px 30px 30px 30px;
+        border: 2px solid orange;
+    }
+    
+    .user {
+        width: 20px;
+        margin-top: -35px;
+        margin-left: 270px;
+        visibility: hidden;
+    }
+    
+    button {
+        font-size: 1rem;
+        padding: 5px;
+        background-color: rgba(255, 166, 0, 0.552);
+        margin-left: 15px;
+    }
+    
+    
+    
+    .footer-part6-contact {
+        width: 50%;
+        height: 200px;
+    
+        margin-top: 30%;
+        height: 600px;
+    }
+    
+    .footer-part6-contact h3 {
+        color: orangered;
+        font-weight: bolder;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+    }
+    
+    .footer-part6-contact h1 {
+        font-weight: bolder;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5rem;
+        font-weight: bolder;
+    }
+    
+    .footer-part6-contact h4 {
+        font-weight: bolder;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+        font-weight: bolder;
+        color: orange;
+        padding-top: 20px;
+    }
+    
+    
+    .icons1 {
+        width: 50px;
+        height: 40px;
+        padding: 10px;
+        border-radius: 50%;
+        background-color: orangered;
+    }
+    
+}    
+    </style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Project</title>
+        <link rel="stylesheet" href="./index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,1,200">
+    </head>
+    <body>
+        <!-- this is header section -->
+        <header id="headersection">
+            <div id="header-navbar">
+                <!-- this is navbar ebook icon -->
+                <div id="header-nav-icon">
+                    <a href="./index.html">
+                        <div id="iconbook">
+                            <span>
+                                <i class="fa-solid fa-book-open fa-xl" style="color: #ffffff"></i>
+                            </span>
+                        </div>
+                        <div id="ebook">
+                            <span>ebook</span>
+                        </div>
+                    </a>
+                </div>
+                <div id="iconsymbol">&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                <!-- this is navbar names -->
+                <div id="header-nav-names">
+                    <a href="#headersection">
+                        <span style="color: red">Home</span>
+                    </a>
+                    <a href="#section-article1">
+                        <span>The Book</span>
+                    </a>
+                    <a href="#article2">
+                        <span>Author</span>
+                    </a>
+                    <a href="#review">
+                        <span>Reviews</span>
+                    </a>
+                    <a href="#footer">
+                        <span>Contact</span>
+                    </a>
+                    <a href="./images/full-template-588-ebook-landing.jpg" download>
+                        <span id="downloadbutton">Download</span>
+                    </a>
+                </div>
+            </div>
+            <!-- this is header background image insert-->
+            <div id="header-background-image"></div>
+            <!-- this background images on headings -->
+            <div class="header-headings">
+                <h2 id="ebookname" style="color: orange">Introducing ebook</h2>
+                <h1 id="headings-h1tag">
+                    ebook landing page
+                    <br>
+                    for professionals
+                </h1>
+                <div class="anchortag">
+                    <a href="">
+                        <span id="anchortag1">Discover More</span>
+                    </a>
+                    &nbsp;&nbsp;
+                    <a href="">
+                        <span id="anchortag2"> Meet the Author</span>
+                    </a>
+                </div>
+            </div>
+            <!-- this is header in reviews images -->
+            <div id="header-reviews-images">
+                <img
+                    id="header-small-review-imgs1"
+                    src="pretty-blonde-woman.jpg"
+                    width="70px"
+                    height="70px"
+                    alt=""
+                >
+                <img
+                    id="header-small-review-imgs2"
+                    src="portrait-young-redhead-bearded-male.jpg"
+                    width="70px"
+                    height="70px"
+                    alt=""
+                >
+                <img
+                    id="header-small-review-imgs3"
+                    src="studio-portrait-emotional-happy-funny-smiling-boyfriend.jpg"
+                    width="70px"
+                    height="70px"
+                    alt=""
+                >
+                <img
+                    id="header-small-review-imgs4"
+                    src="portrait-beautiful-young-woman-standing-grey-wall.jpg"
+                    width="70px"
+                    height="70px"
+                    alt=""
+                >
+                <!-- this is rating -->
+                <span id="header-review-span">4.5
+                    <span class="material-symbols-outlined"> grade</span>
+                    <span class="material-symbols-outlined"> grade</span>
+                    <span class="material-symbols-outlined"> grade</span>
+                    <span class="material-symbols-outlined"> grade</span>
+                    <span id="span1">
+                        <span class="material-symbols-outlined" style="color: white;"> grade</span>
+                    </span>
+                    <span id="ratingnumbers">2,564 reviews</span>
+                </span>
+            </div>
+            <!-- this background image on ebook images -->
+            <div class="header-imgbooks">
+                <img id="header-onlinebook" src="education-online-books.png" alt="">
+            </div>
+        </header>
+        <!-- this section in to create multiple articles -->
+        <section id="section">
+            <!-- this is article1 -->
+            <article id="section-article1">
+                <!-- this is tablet image -->
+                <div id="article1-tablet">
+                    <img id="tablet-screen-img" src="tablet-screen-contents.jpg" alt="">
+                </div>
+                <!-- this is tablet content -->
+                <div id="article1-tablet-content">
+                    <h1 style="color: rgba(254, 168, 9, 0.962)">Modern& Creative</h1>
+                    <br>
+                    <h1>About The Book</h1>
+                    <br>
+                    <br>
+                    <p>
+                        Credit goes to FreePik for images used in this
+                        <br>
+                        ebook landing page template. You may browse
+                        <br>
+                        FreePik to download more free images for your
+                        <br>
+                        website.
+                        <br>
+                    </p>
+                    <br>
+                    <br>
+                    <p>
+                        TemplateMo is one of the best websites to
+                        <br>
+                        download free CSS templates for any purpose.
+                        <br>
+                        This is an ebook landing page template using Bootstrap 5 CSS layout.
+                    </p>
+                </div>
+            </article>
+            <!-- this second article2 -->
+            <article id="article2">
+                <h2 id="article2-h2tag">What's inside?</h2>
+                <br>
+                <h1 id="article2-h1tag">Preview at glance</h1>
+                <!-- this article2 main div -->
+                <div id="article2-maindiv">
+                    <!-- this is a article2 main div in article2-content box -->
+                    <div id="article2-contentbox">
+                        <div id="article2-contentbox-names">
+                            <a href="#introducing">
+                                <span id="a-span">Introduction</span>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                            </a>
+                            <a href="#win">
+                                <span id="a-span0">Chapter 1:
+                                    <strong>
+                                        Win back
+                  your time
+                                    </strong
+                >
+                                </span>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                            </a>
+                            <a href="#chapter2">
+                                <span id="a-span1">Chapter 2:
+                                    <strong>Work less, do more</strong>
+                                </span>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                            </a>
+                            <a href="#chapter3">
+                                <span id="a-span2">Chapter 3:
+                                    <strong>Delegate</strong>
+                                </span>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                            </a>
+                            <a href="#chapter4">
+                                <span id="a-span3">Chapter 4:
+                                    <strong>Habits</strong>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- this is article-contentbox-information -->
+                    <div id="article2-content">
+                <div class="part3-content">
+                <div class="part3-content-d1">
+                  <h1 class="h1-ebook">Introducing ebook</h1>
+                  <p id="introducing">This ebook landing page is good to use for any purpose. This layout is based on Bootstrap 5 CSS framework.</p>
+                  <p> <strong>What is Content Marketing?</strong>If you are wondering what content marketing is all about, this is the place to start.</p>
+                  <h1 class="h1tag"> <center><i class="fa-solid fa-quote-left fa-2xl" style="color: #FFD43B;"></i> <br><br>  <br> Lorem Ipsum dolor sit a met, consecrator adipsicing kennan omega khoum to kio</center></h1>
+                  <p>When you need free HTML CSS templates, please visit Template mo website which provides a variety of templates.</p> <br><br><br>
+                  <div class="wrap">
+                    <span class="left"></span>
+                    <span class="right"></span>
+                  </div>    
+              </div> 
+    
+                <div class="part3-content-d1">
+                <h1 class="h1-ebook">Win back your time</h1>
+                <p id="win">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Sed leo nisl, posuere at molestie ac, suscipit auctor mauris. Etiam quis metus elementum, tempor risus vel, condimentum orci.</p>
+                <p>You are not allowed to redistribute this template ZIP file on any other template collection website. Please contact TemplateMo for more information.</p> 
+                 <div class="main">
+                  <div class="main1"></div>
+                  <div class="main2"></div>
+    
+                </div>
+                <p>If you need some specific CSS templates, you can Google with keywords such as template mo gallery, template mo digital marketing, etc.</p>
+                <div class="wrap">
+                  <span class="left"></span>
+                  <span class="right"></span>
+                </div> 
+              </div>   
+                <div class="part3-content-d1">
+                <h1 class="h1-ebook" >Work less, do more</h1>
+                <p id="chapter2">Credit goes to FreePik for images used in this ebook landing page template. You may browse FreePik to download more free images for your website.</p>
+                <p>This is a second paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                <p>Lorem ipsum dolor sit amet, consive adipisicing elit, sed do eiusmod. tempor incididunt ut labore.</p>
+                <div class="tabbook">
+                  <div class="tabbook1"></div>
+                  <div  class="tabbook2">
+                      <p>Modern ebook ever</p>
+                      <p>Lorem ipsum dolor sit amet, consive adipisicing elit, sed do eiusmod. tempor incididunt.</p>
+                  </div>
+                </div>
+                <div class="wrap">
+                  <span class="left"></span>
+                  <span class="right"></span>
+                </div> 
+             
+              </div> 
+  
+                <div class="part3-content-d1">
+                <h1 class="h1-ebook">Delegate</h1>
+                <p id="chapter3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Lorem ipsum dolor sit amet, consive adipisicing elit, sed do eiusmod. tempor incididunt ut labore.</p>
+                <p>You are not allowed to redistribute this template ZIP file on any other template collection website. Please contact TemplateMo for more information.</p>
+                <div class="content-d1"></div>
+                <p>You may want to contact us for more information about this template.</p>
+                <div class="wrap">
+                  <span class="left"></span>
+                  <span class="right"></span>
+                </div> 
+             
+              </div> 
+              <div id="Chapter4">
+              <div class="part3-content-d1">
+                <h1 class="h1-ebook">Habits</h1>
+                <p id="chapter4">Lorem ipsum dolor sit amet, consecrator adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>You are not allowed to redistribute this template ZIP file on any other template collection website. Please contact TemplateMo for more information.</p>
+                <p>What is Free CSS Templates? Free CSS Templates are a variety of ready-made web pages designed for different kinds of websites.</p>
+                <h1 class="h1tag"> <center><i class="fa-solid fa-quote-left fa-2xl" style="color: #FFD43B;"></i> <br><br>  <br> Lorem Ipsum dolor sit amet, consectetur adipsicing kengan omega khoum to keto</center></h1>
+                <p>You may browse TemplateMo website for more CSS templates. Thank you for visiting our website.</p>
+              </div> 
+              </div> 
+            </div>
+          </div>  
+                </div>  
+        </article>
+        <!-- this article3 part -->
+         <div id="section-article3">
+          <div id="section-article3-images">
+          
+        
+                <!-- <img id="article-img1" src="portrait-mature-smiling-authoress-sitting-desk.jpg" alt="">  -->
+                <img id="article-img2" src="portrait-mature-smiling-authoress-sitting-desk.jpg"  alt="">
+          </div>
+      
+          <div id="section-article3-content">
+            <div class="part4-content">
+              <h2 id="part4-content-h1">Meet Author</h2> <br>
+              <h1>Prof. Sophia</h1> <br>
+              <p >This is an ebook landing page template with Bootstrap 5 CSS framework. It is easy to customize with the use of Bootstrap CSS classes.</p> <br>
+              <p >Lorem ipsum dolor sit amet, consive adipisicing elit, sed do eiusmod. tempor incididunt ut labore.</p>
+              
+             </div> 
+      
+          </div>
+        
+      </div>  
+        <!-- article 4 -->
+         <article class="section-article4">
+        <h2 id="review">Reviews</h2>
+        <h1>What people saying...</h1>
+        <div class="reviews">
+       <div class="review1">
+           <div class="review1-background-img"></div>
+          <div class="backgroundcolor-review11"></div>
+          <div class="review-img1">
+            <img
+            class="header-small-review-imgs1"
+            src="pretty-blonde-woman.jpg"
+            width="70px"
+            height="70px"
+            alt=""
+          />
+          
+          </div>
+          <div class="reviewr-name">
+            <h1>
+              Sandy
+              Artist 
+            </h1>
+          </div>
+          <div class="reviewr-content">
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          </div>
+          
+          
+          <div class="reviewr-numbers">
+            
+            <span class="part1-review-span"><br>
+              <span class="numberrating">4.5</span>
+             <span style="color:orange;" class="material-symbols-outlined"> grade </span> 
+             <span style="color:orange;" class="material-symbols-outlined"> grade </span>
+             <span style="color:orange;" class="material-symbols-outlined"> grade </span>
+             <span style="color:orange;" class="material-symbols-outlined"> grade </span>
+             <span style="color: white;" class="material-symbols-outlined">
+               star
+               </span> <br> <br> 
+       
+           </span>
+
+          </div>
+        </div>
+        
+         <div id="review2"> 
+          <div class="review1-background-img"></div>
+          <div class="backgroundcolor-review2"></div>
+         <div class="review-img2">
+            <img
+            class="header-small-review-imgs2"
+            src="portrait-young-redhead-bearded-male.jpg"
+            width="70px"
+            height="70px"
+            alt=""
+          />
+          </div>
+          
+          <div class="reviewr-name2">
+            <h1>
+              CandyVP,<br>
+              Design
+            </h1>
+          </div>
+          
+          <div class="reviewr-content2">
+           <p>
+            If you need some specific CSS templates, you can Google with keywords such as templatemo one-page, templatemo portfolio, etc.
+
+          </p>
+          </div>
+        
+          <div class="reviewr-numbers2">
+            
+            <span class="part1-review-span2"><br>
+              <span class="numberrating">3.5</span>
+             <span style="color:orange;" class="material-symbols-outlined"> grade </span> 
+             <span style="color:orange;" class="material-symbols-outlined"> grade </span>
+             <span style="color:orange;" class="material-symbols-outlined"> grade </span>
+             <span style="color:white;" class="material-symbols-outlined"> grade </span>
+             <span style="color: white;" class="material-symbols-outlined">
+               star
+               </span> <br> <br> 
+       
+           </span> 
+
+          </div>
+        
+          
+         </div>
+        
+        <div id="review3">
+          <div class="review1-background-img"></div>
+        <div class="backgroundcolor-review3"></div>
+       <div class="review-img3">
+            <img
+            class="header-small-review-imgs3"
+            src="studio-portrait-emotional-happy-funny-smiling-boyfriend.jpg"
+            width="70px"
+            height="70px"
+            alt=""
+          />
+          </div>
+          
+          <div class="reviewr-name3">
+            <h1>
+              John <br>
+              Producer
+
+            </h1>
+          </div>
+          
+          <div class="reviewr-content3">
+           <p>
+            Please tell your friends about our website that we provide 100% free CSS templates for everyone. Thank you for using our templates.
+
+          </p>
+          </div>
+          
+          <div class="reviewr-numbers3">
+            
+            <span class="part1-review-span3"><br>
+              <span class="numberrating">5</span>
+             <span style="color:orange;" class="material-symbols-outlined"> grade </span> 
+             <span style="color:orange;" class="material-symbols-outlined"> grade </span>
+             <span style="color:orange;" class="material-symbols-outlined"> grade </span>
+             <span style="color:orange;" class="material-symbols-outlined"> grade </span>
+             <span style="color:orange;" class="material-symbols-outlined">
+               star
+               </span> <br> <br> 
+       
+           </span>
+
+          </div>
+        </div> 
+        </div>
+
+      </article> 
+        <!-- footer section -->
+        <footer id="footer" >
+        <div id="footer1">
+          <div id="footer-inputs">
+            <div class="footer-part6-inputs">
+              <h1>Get your free <br> ebook</h1>
+              <div class="inputs">
+                <input type="required" id="inputt" placeholder="Your Name" required >
+              <div class="user"><i class="fa-solid fa-user"></i></div>
+              
+              </div> <br> <br>
+              <div class="inputs">
+                <input type="mail"  placeholder="Your@Company.com"  >
+                <div class="user" ><i class="fa-solid fa-envelope"></i></div>
+                
+              </div> <br> <br>
+                  <button type="submit"> <a href="#inputt">Download ebook</a>  </button> 
+              </div>
+          
+            
+          </div>
+        </div>
+        
+        <div id="footer2">
+          <div class="footer-part6-contact">
+            <h3>Say hi and talk to us</h3>
+            <h1>Contact</h1>
+            
+               <a href="">
+                <h4>
+                 
+                   <i class="fa-solid fa-location-dot">
+                    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317716.60645421536!2d-0.43124416199480503!3d51.52860701284128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2sin!4v1714699132439!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"> </iframe> -->
+         </i>
+                   London, United Kingdo
+              </h4>
+            </a>  
+            <a href="tel:010-020-0340"><h4> 010-020-0340</h4></a>  
+             <a href="mailto:bhargavichittathuru@gmail.com"><h4> info@company.com</h4></a>  <br>  
+            <h3>Social</h3>   <br> <br>
+            <div class="font-icons">
+            <a  href=""> <div class="icons1" ><i class="fa-brands fa-instagram fa-2xl"></i></div></a>&nbsp;&nbsp;
+            <a href=""><div class="icons1" ><i class="fa-brands fa-twitter fa-2xl"></i></div></a>&nbsp;&nbsp;
+            <a  href=""><div class="icons1"  ><i class="fa-brands fa-facebook fa-2xl"></i></div></a>&nbsp;&nbsp;
+            <a  href=""><div class="icons1"  ><i class="fa-brands fa-whatsapp fa-2xl"></i></div></a>
+            </div>
+            <h4>Copyright © 2048 ebook company
+            </h4> <br>
+            <a href=""><h3>designed by templatemo</h3></a>
+                      
+          </div>
+      </div>    
+      </footer> 
+    </section>
+</body>
+</html>
